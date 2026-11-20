@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title data-i18n="ab.metaTitle">About me — Marta Lisovska</title>
+<meta name="description" data-i18n-attr="content:ab.metaDesc" content="How I work, what I trained in, what therapy is and is not, and how confidentiality actually works.">
+<meta name="theme-color" content="#F4F1EA" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#191A16" media="(prefers-color-scheme: dark)">
+<meta property="og:type" content="website">
+<meta property="og:title" content="About me — Marta Lisovska">
+<meta property="og:description" content="How I work, what I trained in, what therapy is and is not, and how confidentiality actually works.">
+<link rel="canonical" href="https://dmitrii-mazurkevich.github.io/psychologist-website/about.html">
+<link rel="alternate" hreflang="en" href="https://dmitrii-mazurkevich.github.io/psychologist-website/about.html?lang=en">
+<link rel="alternate" hreflang="ru" href="https://dmitrii-mazurkevich.github.io/psychologist-website/about.html?lang=ru">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='24' fill='%235C6449'/%3E%3Cpath d='M30 62c0-18 8-30 20-30s20 12 20 30' stroke='%23F4F1EA' stroke-width='7' fill='none' stroke-linecap='round'/%3E%3Ccircle cx='50' cy='72' r='5' fill='%23F4F1EA'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;1,400&family=Nunito+Sans:wght@400;600;700&display=swap">
+<link rel="stylesheet" href="assets/css/main.css">
+<script>
+(function () {
+  var d = document.documentElement, langs = ['en', 'ru'], lang = null;
+  var p = location.search.match(/[?&]lang=([a-z]{2})/i);
+  if (p && langs.indexOf(p[1].toLowerCase()) > -1) lang = p[1].toLowerCase();
+  if (!lang) { try { var s = localStorage.getItem('ml-lang'); if (langs.indexOf(s) > -1) lang = s; } catch (e) {} }
+  if (!lang) { lang = /^ru/i.test(navigator.language || '') ? 'ru' : 'en'; }
+  d.setAttribute('data-lang', lang);
+  if (lang !== 'en') { d.className += ' i18n-pending'; setTimeout(function () { d.classList.remove('i18n-pending'); }, 1200); }
+  try { var t = localStorage.getItem('ml-theme'); if (t) d.setAttribute('data-theme', t); } catch (e) {}
+})();
+</script>
+</head>
+
+<body>
+<a class="skip-link" href="#main" data-i18n="nav.skip">Skip to content</a>
+
+<header class="site-header">
+  <div class="container">
+    <nav class="nav" aria-label="Main" data-i18n-attr="aria-label:nav.main">
+      <a class="brand" href="index.html">
+        <span class="brand__name">Marta Lisovska</span>
+        <span class="brand__role" data-i18n="brand.role">Psychotherapist</span>
+      </a>
+
+      <ul class="nav__list">
+        <li><a href="index.html" data-i18n="nav.home">Home</a></li>
+        <li><a href="index.html#how" data-i18n="nav.how">How it works</a></li>
+        <li><a href="about.html" aria-current="page" data-i18n="nav.about">About me</a></li>
+        <li><a href="index.html#prices" data-i18n="nav.prices">Prices</a></li>
+        <li><a href="contact.html" data-i18n="nav.contact">Get in touch</a></li>
+      </ul>
+
+      <div class="nav__actions">
+        <div class="lang" role="group" aria-label="Language" data-i18n-attr="aria-label:nav.language">
+          <button type="button" data-lang="en" aria-pressed="true">EN</button>
+          <button type="button" data-lang="ru" aria-pressed="false">RU</button>
+        </div>
+        <button class="icon-btn theme-toggle" type="button" data-i18n-attr="aria-label:nav.theme" aria-label="Switch colour theme">
+          <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+          <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+        </button>
+        <button class="icon-btn nav-toggle" type="button" aria-expanded="false" aria-controls="mobile-menu" data-i18n-attr="aria-label:nav.menu" aria-label="Open menu">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+        </button>
+        <a class="btn nav__cta" href="contact.html" data-i18n="nav.book">Book a consultation</a>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<div class="mobile-menu" id="mobile-menu">
+  <a href="index.html" data-i18n="nav.home">Home</a>
+  <a href="index.html#how" data-i18n="nav.how">How it works</a>
+  <a href="about.html" data-i18n="nav.about">About me</a>
+  <a href="index.html#prices" data-i18n="nav.prices">Prices</a>
+  <a href="contact.html" data-i18n="nav.contact">Get in touch</a>
+  <a class="btn" href="contact.html" data-i18n="nav.book">Book a consultation</a>
+</div>
+
+<main id="main">
+
+  <div class="page-head">
+    <div class="container">
+      <h1 class="page-head__title" data-i18n="ab.title">About me</h1>
+      <p class="page-head__lede" data-i18n="ab.lede">
+        Enough to decide whether you want to write to me, without a wall of credentials.
+      </p>
+    </div>
+  </div>
+
+  <section class="section">
+    <div class="container">
+      <div class="prose">
+        <p data-i18n="ab.p1">
+          I have been practising for nine years. Before that I did something else entirely,
+          which I mention because a fair number of the people I see are in the middle of
+          exactly that kind of change and are convinced it makes them a failure.
+        </p>
+
+        <h2 data-i18n="ab.h1">How I work</h2>
+        <p data-i18n="ab.p2">
+          My training is in cognitive behavioural therapy, and I went on to schema therapy.
+          In plain terms: we start from what is happening now and what you would like to be
+          different, and where the same thing keeps returning, we look at where the pattern
+          was learned. Usually it was a reasonable response to something, once.
+        </p>
+        <p data-i18n="ab.p3">
+          Practically, sessions are conversations. I ask a lot of questions. Sometimes we
+          agree on something to try between sessions, and if you do not do it, that is
+          information rather than a failure.
+        </p>
+
+        <h2 data-i18n="ab.h2">What I do not do</h2>
+        <ul>
+          <li data-i18n="ab.l1">I do not diagnose. That is a psychiatrist's job, and if I think you should see one, I will say so plainly.</li>
+          <li data-i18n="ab.l2">I do not prescribe medication and I will not comment on medication another specialist has prescribed you.</li>
+          <li data-i18n="ab.l3">I do not work with acute crises or active addiction — these need a different setting, and pretending otherwise wastes your time.</li>
+          <li data-i18n="ab.l4">I do not promise timelines. Anyone who promises you a number of sessions before meeting you is guessing.</li>
+        </ul>
+
+        <h2 data-i18n="ab.h3">Confidentiality, concretely</h2>
+        <p data-i18n="ab.p4">
+          Nothing you say leaves the room. Not to your partner, not to your parents, not to
+          whoever is paying for the sessions. If a family member writes to me about you, I
+          will not confirm that you are a client.
+        </p>
+        <p data-i18n="ab.p5">
+          There are two exceptions and I state them at the first session rather than burying
+          them here: a direct, immediate threat to your life or someone else's, and a lawful
+          court order. In supervision — which every practising therapist is required to
+          attend — cases are discussed with everything identifying removed.
+        </p>
+        <p data-i18n="ab.p6">
+          Notes are minimal, kept encrypted, and you can ask to see them.
+        </p>
+
+        <h2 data-i18n="ab.h4">Training and supervision</h2>
+        <ul>
+          <li data-i18n="ab.t1">MSc in clinical psychology, 2015</li>
+          <li data-i18n="ab.t2">Cognitive behavioural therapy, four-year certified programme</li>
+          <li data-i18n="ab.t3">Schema therapy, advanced level</li>
+          <li data-i18n="ab.t4">Regular individual and group supervision, ongoing</li>
+          <li data-i18n="ab.t5">Member of a national psychotherapy association, bound by its ethical code</li>
+        </ul>
+        <p class="muted" data-i18n="ab.credNote">
+          On a real site every line here would name the institution and the year, and link to
+          a verifiable registry entry. Vague credentials are the most common warning sign in
+          this field.
+        </p>
+
+        <h2 data-i18n="ab.h5">Languages</h2>
+        <p data-i18n="ab.p7">
+          I work in English and Russian. People often find it easier to talk about difficult
+          things in a language that is not their first — and just as often, the opposite.
+          Either is fine, and you can switch mid-sentence.
+        </p>
+      </div>
+
+      <p class="mt-4"><a class="btn" href="contact.html" data-i18n="nav.book">Book a consultation</a></p>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer__grid">
+      <div>
+        <a class="brand" href="index.html">
+          <span class="brand__name">Marta Lisovska</span>
+          <span class="brand__role" data-i18n="brand.role">Psychotherapist</span>
+        </a>
+        <p class="footer__about" data-i18n="foot.about">
+          Individual and couples therapy, in person and online. Working in English and Russian.
+        </p>
+      </div>
+      <div>
+        <h2 data-i18n="foot.sections">Pages</h2>
+        <ul>
+          <li><a href="index.html#how" data-i18n="nav.how">How it works</a></li>
+          <li><a href="about.html" data-i18n="nav.about">About me</a></li>
+          <li><a href="index.html#prices" data-i18n="nav.prices">Prices</a></li>
+          <li><a href="contact.html" data-i18n="nav.contact">Get in touch</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2 data-i18n="foot.contact">Contact</h2>
+        <ul>
+          <li><a href="mailto:hello@lisovska.example.com">hello@lisovska.example.com</a></li>
+          <li><a href="index.html#crisis" data-i18n="foot.crisis">Crisis contacts</a></li>
+          <li><span data-i18n="foot.reply">Replies within one working day</span></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <span>© <span data-year>2026</span> Marta Lisovska</span>
+      <span data-i18n="foot.demoNote">Concept site built for a web-development portfolio.</span>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/js/i18n.js" defer></script>
+<script src="assets/js/main.js" defer></script>
+</body>
+</html>
